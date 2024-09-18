@@ -8,7 +8,7 @@
   <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
-	<form action="thankyou.html" method="POST" autocomplete="on">
+	<form action="/submit" method="POST" autocomplete="on">
 		<fieldset>
 			<legend>User Information</legend>
       
@@ -17,7 +17,7 @@
       <input type="email" id="email" name="email" required placeholder="name@example.com" />
 
       <!-- Phone Number -->
-      <label for="phone">Phone&nbsp;Number:</label>
+      <label for="phone" style="display: inline;">Phone Number:</label>
       <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
 
       <!-- Date of Birth -->
@@ -28,6 +28,5 @@
       <button type="submit">Submit</button>
 		</fieldset>
 	</form>
-
 </body>
 </html>
