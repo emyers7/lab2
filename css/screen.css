@@ -14,8 +14,15 @@ label {
   font-weight: bold;
 }
 
-input {
+/* Ensure labels and inputs are aligned in a row */
+.form-group {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+input {
+  margin-left: 10px; /* Space between label and input */
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -46,11 +53,18 @@ button:hover {
     gap: 20px;
   }
 
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   label {
-    grid-column: span 2;
+    grid-column: span 1;
+    margin: 0;
   }
 
   input, button {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 }
