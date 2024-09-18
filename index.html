@@ -13,16 +13,22 @@
 			<legend>User Information</legend>
       
       <!-- Email Address -->
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required placeholder="name@example.com" />
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="name@example.com" />
+      </div>
 
       <!-- Phone Number -->
-      <label for="phone" style="display: inline;">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
+      </div>
 
       <!-- Date of Birth -->
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required />
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
 
       <!-- Submit Button -->
       <button type="submit">Submit</button>
